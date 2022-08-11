@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Project5 - View Property</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="description" content="All propety are available here based on different areas , home type.. all information available of house like price, location, details.. " />
+    <meta name="keywords" content="property, toronto, appartment, house, rent, home, canada, downtown, low price house, one bedroom house, renting home" />
+    <link rel="stylesheet" href="./css/main_stylesheet.css" />
+    <link rel="stylesheet" href="./css/main_viewproperty.css" />
+    <link rel="stylesheet" href="./css/popupcontact.css" /> 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>   
+  </head>
+  <body>
+    <!-- main header -->
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="./img/logo5.jpg" alt="logo" class="logoimg">
+          <a href="homepage_buyer.html">Rent & Relax</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li>
+            <a href="view_property.html" class="desktop-item">Houses</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Houses</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row"> <img src="img/back6.jpg" alt=""> </div>
+                <div class="row">
+                  <h3>House Type</h3>
+                  <ul class="mega-links">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Apartment</a></li>
+                    <li><a href="#">Cottage</a></li>
+                    <li><a href="#">Basement</a></li>
+                    <li><a href="#">Office</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <h3>Location</h3>
+                  <ul class="mega-links">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Downtown</a></li>
+                    <li><a href="#">North york</a></li>
+                    <li><a href="#">Etobicoke</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <h3>Range</h3>
+                  <ul class="mega-links">
+                    <li><a href="#">Less than 1000$</a></li>
+                    <li><a href="#">1000$ -2000$</a></li>
+                    <li><a href="#">2000$ - 3000$</a></li>
+                    <li><a href="#">More than 3000$</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="About_us.html">About Us</a></li>
+          <li><a href="feedback.html">Contact</a></li>
+          <li>
+            <a href="#" class="desktop-item">Profile <i class="fa fa-user" id="userlogo"></i></a>
+            <input type="checkbox" id="showDrop">
+            <label for="showDrop" class="mobile-item">Profile</label>
+            <ul class="drop-menu">
+              <li><a href="OwnerResponse.html">Owner's responses</a></li>
+              <li><a href="FindProperty.html">Request for property</a></li>
+              <li><a href="forget.html">Forgot password</a></li>
+              <li><a href="login.html">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+      </div>
+    </nav>
+    <!-- Header image with search button -->
+    <header>
+      <!--make header with title and search bar -->
+      <h1> Discover<br> most suitable<br> property </h1>
+      <!-- form for search property by area..-->
+      <form id="forsearch">
+          <!-- create textbox with text - search by area, which allow user to give input-->
+          <input id="search" type="search" placeholder="Search by Area "  />
+          <!--button for search-->
+          <button type="button" class="button">Search</button>    
+      </form>
+    </header>
+    
+    <main>
+      <!-- filters -->
+      <h2>Property Filter</h2>
+      <!-- Filter for user custom search -->
+      <section class="filters">
+          <form>
+          <!-- select for make drop down list and option for give all option to drop down..-->
+          <select id="area" title="area" class="sarea">
+              <option value="">Select Area..</option>
+              <option>Any</option>
+              <option value="downtown">Downtown</option>
+              <option value="north-york">North York</option>
+              <option value="etobicoke">Etobicoke</option>
+          </select>
+          <select id="type" title="Home_Type" class="stype">
+            <option value="">Select House Type..</option>
+            <option>Any</option>
+            <option value="app">Appartment</option>
+            <option value="Cottage" >Cottage</option>
+            <option value="Basement" >Basement</option>
+            <option value="office" >Office</option>
+          </select>
+          <select id="price" title="Price" class="sprice">
+            <option value="">Select Price Range..</option>
+            <option>Any</option>
+            <option value="l-500">less than 500$</option>
+            <option value="500-1000">500$-1000$</option>
+            <option value="1000-2000">1000$-2000$</option>
+            <option value="2000-3000">2000$-3000$</option>
+            <option value="m-3000">More than 3000$</option>
+          </select>
+        <button type="button" class="button" onclick="findValue()">Search</button>
+        </form> 
+      </section>
+
+      <!-- craete property catlog with many images and some details-->
+      <section class="homes">
+        <div class="home-part app Any 1000-2000 downtown" class="app">
+            <div class="home-image container">
+              <!--house image-->
+                <img src="./img/app3.jpg" alt="app1">
+                <div class="overlay">
+                  <div class="text" onclick="viewmore()">view more</div>
+                </div>
+            </div>
+            <div class="overlay">
+              <div class="text">View More</div>
+            </div>
+            <!-- home information like price , type and address-->
+            <div class="home-info" >
+                <button class="button" type="button"  onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+                <div class="result"></div> 
+                <h2>$1000 - $2000 </h2>
+                <h2>Appartment</h2>
+                <h3>100 Young street - Downtown </h3>
+            </div>
+            
+        </div>
+        <div class="home-part app Any 2000-3000 etobicoke" class="app">
+            <div class="home-image">
+              <img src="./img/app2.jpg" alt="app2">
+            </div>
+            <div class="home-info">
+              <button type="button" class="button" onclick="openForm()" >Contact <i class="fa fa-envelope"></i></button>
+              <h2>$2000 - $3000 </h2>
+              <h2>Appartment</h2>
+              <h3>200 Elm street - Etobicoke </h3>
+            </div>
+        </div>
+        <div class="home-part app Any 500-1000 north-york" class="app">
+            <div class="home-image">
+              <img src="./img/app5.jpg" alt="app3">
+            </div>
+            <div class="home-info">
+                <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$500 - $1000 </h2>
+              <h2>Appartment</h2>
+              <h3>999 Parlament street - North York </h3>
+            </div>
+        </div>
+        <div class="home-part basement Any l-500 downtown" class="base">
+            <div class="home-image">
+              <img src="./img/base2.jpg" alt="base1">
+            </div>
+            <div class="home-info">
+                <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$200 - $500 </h2>
+              <h2>Basement</h2>
+              <h3>50 ontario street - Downtown </h3>
+            </div>
+        </div>
+        <div class="home-part basement Any 500-1000 etobicoke">
+            <div class="home-image">
+              <img src="./img/base5.jpg" alt="base2">
+            </div>
+            <div class="home-info">
+                <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$500 - $1000 </h2>
+              <h2>Basement</h2>
+              <h3>9 Sent Patric street - Etobicoke</h3>
+            </div>
+        </div>
+        <div class="home-part basement Any 500-1000 north-york">
+            <div class="home-image">
+              <img src="./img/base3.jpg" alt="base3">
+            </div>
+            <div class="home-info">
+                <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$500 - $1000 </h2>
+              <h2>Basement</h2>
+              <h3>89 Queen street - North York </h3>
+            </div>
+        </div>
+        <div class="home-part condo Any 2000-3000 downtown">
+            <div class="home-image">
+              <img src="./img/condo1.jpg" alt="condo1">
+            </div>
+            <div class="home-info">
+                <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$2000 - $3000 </h2>
+              <h2>Condo</h2>
+              <h3>50 King street - Downtown </h3>
+            </div>
+        </div>
+        <div class="home-part condo Any 1000-2000 etobicoke">
+            <div class="home-image">
+              <img src="./img/condo2.jpg" alt="condo2">
+            </div>
+            <div class="home-info">
+                <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$1000 - $2000 </h2>
+              <h2>Condo</h2>
+              <h3>9 University Ave. street - Etobicoke </h3>
+            </div>
+        </div>
+        <div class="home-part condo Any 500-1000 1000-2000 north-york">
+            <div class="home-image">
+              <img src="./img/condo3.jpg" alt="condo3">
+            </div>
+            <div class="home-info">
+                <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$500 - $2000 </h2>
+              <h2>Condo</h2>
+              <h3>80 Beach street - North York </h3>
+            </div>
+        </div>
+        <div class="home-part office Any 500-1000 1000-2000 2000-3000 downtown">
+            <div class="home-image">
+            <img src="./img/off1.jpg" alt="Office1">
+            </div>
+            <div class="home-info">
+            <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+            <h2>$900 - $3000 </h2>
+            <h2>Office</h2>
+            <h3>90 norvey street - Downtown </h3>
+            </div>
+        </div>
+        <div class="home-part office Any 2000-3000 etobicoke">
+            <div class="home-image">
+              <img src="./img/off2.jpg" alt="Office2">
+            </div>
+            <div class="home-info">
+              <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$2000 - $3000 </h2>
+              <h2>Office</h2>
+              <h3>75 chaina street - Etobicoke </h3>
+            </div>
+        </div>
+        <div class="home-part office Any 2000-3000 north-york">
+            <div class="home-image">
+              <img src="./img/off4.jpg" alt="Office3">
+            </div>
+            <div class="home-info">
+              <button type="button" class="button" onclick="openForm()">Contact <i class="fa fa-envelope"></i></button>
+              <h2>$2500 - $3000 </h2>
+              <h2>Office</h2>
+              <h3>10 norvey street - North York </h3>
+            </div>
+        </div>
+      </section>
+    </main>
+        
+    <!-- pop up form - contact to owner -->
+    <div id="modalOne" class="modal">
+      <div class="modal-content">
+        <section id="contact">
+          <!--Image for left side ------------->
+          <div class="left-part">
+            <div class="leftimg">
+              <img src="img/app2.jpg" class="img"/>
+            </div>
+            <div class="multipleimg">
+              <img src="img/app1.jpg" class="mimg"/>
+              <img src="img/condo2.jpg" class="mimg"/>
+              <img src="img/app3.jpg" class="mimg"/>
+            </div>
+          </div>
+          <!--- Right side - form for contact ------------->
+          <div class="contact-box">
+            <!--heading---------->
+            <div class="c-heading">
+              <h2>Contact Property Owner </h2>
+              </div>
+            <!--inputs------------------>
+            <div class="c-inputs">
+            <form>
+              <ul class="form-style-1">
+                  <li><label>Full Name <span class="required">*</span></label>
+                    <input type="text" name="field1" class="field-divided" placeholder="First" /> 
+                    <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                  
+                  <li>
+                    <label>Phone <span class="required">*</span></label>
+                    <input type="number" name="field1" class="field-long" />
+                  </li>
+                  <li>
+                      <label>Email <span class="required">*</span></label>
+                      <input type="email" name="field3" class="field-long" />
+                  </li>
+                  <li>
+                      <label>Your Message <span class="required">*</span></label>
+                      <textarea class="field-textarea"> Hi, I would like to schedule a visit to your rental property. I found on rent&relax. Please let me know when best date and time whold be....</textarea>
+                      </textarea>
+                  </li>
+                  <li>
+                      <input type="submit" value="Submit" />
+                  </li>
+              </ul>
+              </form>
+              
+            </div> 
+          </div>
+          <!--close button -->
+          <button type="button" onclick="closeForm()" id="closebtn">  <img src="img/closeicon.ico" class="close"></button> 
+        </section>
+      </div>
+    </div>
+    <!-- website main footer -->
+    <footer class="main_footer">
+      <div class="content">
+        <!--left colum of footer-->
+        <div class="left box">
+          <!-- website name and info-->
+          <div class="upper">
+            <div class="topic">Rent & Relax</div>
+            <p>Find your Dream renting space &</br/> Find suitable renter for your space. <br/> </p>
+          </div>
+          <!-- website contact info-->
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>+1 999 9999 999</a>
+            </div>
+            <div class="email">
+              <a href="mailto:support@murach.com"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <!-- all main pages link in footer 2nd column-->
+        <div class="middle box">
+          <div class="topic">Pages</div>
+          <div><a href="homepage_buyer.html">Homepage</a></div>
+          <div><a href="view_property.html">All Houses</a></div>
+          <div><a href="About_us.html">About us</a></div>
+          <div><a href="feedback.html">Contact us</a></div>
+          <div><a href="OwnerResponse.html">Owner's messages</a></div>
+        </div>
+        <!-- right side of footer-->
+        <div class="right box">
+          <!-- form with message us title-->
+          <div class="topic">Message us</div>
+          <form action="#">
+            <input type="text" placeholder="Enter Your Message">
+            <input type="submit" name="" value="Send">
+            <!--social media icons with links-->
+            <div class="media-icons">
+              <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+              <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+        <!-- footer bottom one line with rights-->
+        <div class="bottom">
+          <p>Copyright &copy; 2022 <a href="#">Rent & Relax </a> All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- java script file-->
+    <script src="js/view_propery_hk.js"></script>
+    </body> 
+</html>

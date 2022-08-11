@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/admin.css" />
+    </head>
+    <body>
+      <!-- website main header -->
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./image/website_logo.jpg" alt="logo" class="logoimg">
+            <a href="index.html" class="websitename">Rent & Relax</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li>
+                <a href="#" class="desktop-item">View property</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Houses</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <img src="./image/back6.jpg" alt="">
+                    </div>
+                    <div class="row">
+                      <h3>House Type</h3>
+                      <ul class="mega-links">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Apartment</a></li>
+                        <li><a href="#">Cottage</a></li>
+                        <li><a href="#">Basement</a></li>
+                        <li><a href="#">Office</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <h3>Location</h3>
+                      <ul class="mega-links">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Downtown</a></li>
+                        <li><a href="#">North york</a></li>
+                        <li><a href="#">Etobicoke</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <h3>Range</h3>
+                      <ul class="mega-links">
+                        <li><a href="#">Less than 1000$</a></li>
+                        <li><a href="#">1000$ -2000$</a></li>
+                        <li><a href="#">2000$ - 3000$</a></li>
+                        <li><a href="#">More than 3000$</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            <li><a href="#">Post property</a></li>
+            <li><a href="mailto:gk1717@gmail.com">Contact other admins</a></li>
+            <li>
+              <a href="#" class="desktop-item"><i class="fa fa-user" id="userlogo"></i> Profile </a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Profile</label>
+              <ul class="drop-menu">
+                <li><a href="#">Buyer's Requests</a></li>
+                <li><a href="#">Seller's Requests</a></li>
+                <li><a href="#">My Properties</a></li>
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="login.html">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav><!-- HEADER END-->
+
+      <!--MAIN START HERE-->
+      <main>
+        <img class="banner" src="./image/banner.png">
+        <!--to do list-->
+        <div class="todo">
+          <h2> TO-DO Task List: </h2>
+             <div id="wrap"><p id="result"></div></p>
+
+             <div id="div1">
+             <h3> Task to be done: </h3>
+             <form>
+                <div id="wrap">Task: <input type="text" id="add"><br>
+                <input type="button" value="Add Task" onclick="addtask()" id="but"></div><br>
+             </form>
+            </div>
+            <div id="div2">
+             <h3>Delete Task that are done:</h3>
+             <form>
+                <div id="wrap">task: <select id="show"></select><br>
+                <input type="button" value="Delete Task" onclick="deltask()" id="but"></div><br>
+            </form>
+          </div>
+        </div>
+
+            <section>
+                <div class="container">
+                <!--add1-->
+                    <div class="gallery">
+                        <a target="_blank" href="image/property/p1.jpg">
+                            <img src="image/property/p1.jpg" alt="property1" width="600" height="400"></a>
+                            <div class="desc"><p id="p1">168 Caines Ave, Toronto, Ontario, M2R2L5<br>$5,500 CAD/mo.<br>4-bedroom ,5-washroom <br> 4,200 Sqft<br> 
+                                Magnificent Luxury Home With Approx 4200 Sq Ft Of Living Space!!! French Doors In The Foyer With Custom Chandeliers, Marble Flooring Throughout 1st Floor, 2-Way Fire Place, Open Concept Kitchen W/ Granite Countertops, Large Island Perfect For Entertaining. </p><br>
+                            <button class="accept"onclick="accept()">Accept(Publish)</button><br>
+                            <button class="decline" onclick="decline()">Decline(Remove)</button></div></div>
+                            </div>
+                <!--add2-->
+                     <div class="gallery">
+                        <a target="_blank" href="image/property/p3.jpg">
+                            <img src="image/property/p3.jpg" alt="property2" width="600" height="400"></a>
+                            <div class="desc">805 Mickleborough Dr, London, Ontario, N6G 5R4<br>with open swimming pool<br>$6,500 CAD/mo.<br>5-bedroom ,7-washroom <br>
+                                 <br>5 Bedroom And 7 Bathroom, With Large Open Basement. Open Concept Main Level Living With Large Great Room. Lower Level Is Fully Finished With A Full Bathroom Easy To Add A Fourth Bedroom If Needed.<br>
+                            <button class="accept"onclick="accept()">Accept(Publish)</button><br>
+                            <button class="decline" onclick="decline()">Decline(Remove)</button></div></div>
+                            </div>
+                <!--add3-->
+                <div class="gallery">
+                    <a target="_blank" href="image/property/p2.jpg">
+                        <img src="image/property/p2.jpg" alt="property1" width="600" height="400"></a>
+                        <div class="desc">250 Caines Ave, Toronto, Ontario, M2R2L5<br>$6,500 CAD/mo.<br>4-bedroom ,5-washroom <br> 4,200 Sqft<br> 
+                            Magnificent Luxury Home With Approx 4200 Sq Ft Of Living Space!!! French Doors In The Foyer With Custom Chandeliers, Marble Flooring Throughout 1st Floor, 2-Way Fire Place, Open Concept Kitchen W/ Granite Countertops, Large Island Perfect For Entertaining. <br>
+                        <button class="accept" onclick="accept()">Accept(Publish)</button><br>
+                        <button class="decline" onclick="decline()">Decline(Remove)</button></div></div>
+                        </div>
+               
+            </section>
+        </main><br><hr>
+      <!--main end her-->
+
+      
+      <script src="js/admin.js"></script>
+    </body>
+</html>

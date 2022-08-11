@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--adding title & logo-->
+        <title>rent&relax/login.ca</title>
+        <link href="image/website_logo.jpg" rel="shortcut icon" />
+        <!--adding meta data-->
+        <meta charset="utf-8" />
+        <meta name="description" content="All propety are available here based on different areas , home type.. all information available of house like price, location, details.. " />
+        <meta name="keywords" content="property, toronto, appartment, house, rent, home, canada, downtown, low price house, one bedroom house, renting home" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--embending css -->
+        <link rel="stylesheet" href="./css/login.css" /> 
+    </head>
+    <body>
+        <header>   
+            <!--header to display logo & links-->
+            <div class="wrapper">
+                <div class="logo">
+                  <img src="./image/website_logo.jpg" alt="logo" class="logoimg">
+                  <a href="index.html" class="websitename">Rent & Relax</a></div>
+                  <a href="index.html" class="backtext">  Back To Homepage</a></div>
+            </header>
+            
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+
+            <!--main body-->
+            <main>
+                <div class="login-box">
+                    <h1>Sign in NOW</h1>
+                    <form>
+                        <div class="user-box">
+                            <input type="text" name="username" id="username" required><span id="error"></span>
+                            <label for="username">Phone Number / Email / Username</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="password" name="password" id="password" required><span id="error"></span>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="typeofuser" ><br>
+                            <label>Sign in as :</label><br>
+                            <input type="radio" name="type" value="buyer" id="buyer" checked>
+                            <label for="buyer">Buyer- To rent & view the property</label><br>
+                            <input type="radio" name="type" value="seller" id="seller">
+                            <label for="seller">Seller- To sell or add the property</label>
+                        </div>
+                        <a id="login">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            LOG IN
+                        </a>
+                    </form>
+                </div>
+                <div class="login-box2">
+                    <label>Need help?</label>
+                    <a href="forget.html">Forget password</a>
+                    <br>
+                    <label>Don't have an account?</label>
+                    <a href="reg.html">Sign up</a>
+                </div>
+            </main>
+
+              <!--footer -->
+           <footer class="login-box3">
+            <div class="bottom">
+                <p>Copyright &copy; 2022 <a href="index.html">Rent & Relax </a> All rights reserved</p>
+            </div>
+        </footer>
+
+
+            <!--embending javascript(JQery is used)-->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+            <script  src="js/login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Dashboard file -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Dashboard</title>
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <link rel="stylesheet" href="./css/main_stylesheet.css">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
+<body>
+  <!-- check the changes-->
+    <header>
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./img/website_logo.jpg" alt="logo" class="logoimg">
+            <a href="homepage_owner.html" class="websitename">Rent & Relax</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <li><a href="postProperty.html">Post property</a></li>
+              <li><a href="About_us_owner.html">About Us</a></li>
+              <li><a href="feedback_owner.html">Contact</a></li>
+              <li>
+                <a href="#" class="desktop-item"><i class="fa fa-user" id="userlogo"></i> Profile </a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Profile</label>
+                <ul class="drop-menu">
+                  <li><a href="contact_details_sending_form.html">Send Detail</a></li>
+                  <li><a href="dashboard.html">My properties</a></li>
+                <li><a href="login.html">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+    </header>
+
+    <main class="recent_house">
+      <h2> My Properties </h2>
+
+      <div class="row">
+          <div class="column" style="margin-right:120px;">
+            <img src="./images/house2.jfif" alt="base2" >
+            <p><address>
+              768 Trailview Dr. , Peterborough, ON
+          </address></p>
+          <div id="myDIV2">
+            <ul>
+              <li>This is a 4 bedroom house.</li>
+              <li>Suitable for a big family.</li>
+              <li>This unit is available from 1st October.</li>
+            </ul>
+          </div>
+          <button id="del"> <a href="deleteProperty.html">Delete</a></button>
+          <button onclick="myFunction2()">Show Details</button>
+          </div>
+
+          <div class="column">
+            <img src="./img/base3.jpg" alt="base3" >
+            <p><address>
+              112 College St., Downtown, Toronto, ON
+          </address></p>
+          <div id="myDIV3">
+            <ul>
+              <li>This is a 2 bedroom Basement.</li>
+              <li>All Utilities included.</li>
+              <li>Available from 1st September.</li>
+            </ul>
+          </div>
+          <button id="del"> <a href="deleteProperty.html">Delete</a></button>
+          <button onclick="myFunction3()">Show Details</button>
+          </div>
+        </div>
+  </main>
+
+
+    <!-- <main>
+      <div class="container">
+        <div class="cards" id="cards">
+            <div class="valid">
+              <h3><a href="#">From <strong>May 25, 22 </strong> <br><br> To <strong>Jun 25, 22</strong></a></h3>     
+            </div>
+            <div class="details">
+                <div class="sec">
+                    <img src="./images/house.jfif" alt="house image">
+                    Apartment | 2 room set with spacious living room
+                    <button id="btn1">Active</button>
+                    <button id="del"> <a href="deleteProperty.html">Delete</a></button>
+                    <address>
+                        Address - 122 Jane St, North York, Toronto, ON
+                    </address>
+                </div>
+                <hr>
+                <div class="sec2">
+                    views: 134 | Likes : 4
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="valid">
+                From <strong>Jan 25, 22 </strong> <br><br> To <strong>Feb 25, 22</strong> 
+            </div>
+            <div class="details">
+                <div class="sec">
+                    <img src="./images/house2.jfif" alt="house image">
+                    Basement | 1 room with living room Available
+                    <button id="btn2">Expired</button>
+                    <button id="del"> <a href="deleteProperty.html">Delete</a></button>
+                    <address>
+                        Address - 122 Trailview Dr, Peterborough, ON
+                    </address>
+                </div>
+                <hr>
+
+                <div class="sec2">
+                    views: 200 | Likes : 50
+                </div>
+            </div>
+        </div>
+      </div>
+    </main> -->
+
+    <footer class="main_footer">
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p>Find your Dream renting space &</br/> Find suitable renter for your space. <br/> </p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+1 999 9999 999</a>
+              </div>
+              <div class="email">
+                <a href="mailto:support@murach.com"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Pages</div>
+            <div><a href="homepage_owner.html">Homepage</a></div>
+            <div><a href="postProperty.html">Post Property</a></div>
+            <div><a href="About_us_owner.html">About us</a></div>
+            <div><a href="feedback_owner.html">Contact us</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">Message us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter Your Message">
+              <input type="submit" name="" value="Send">
+              <div class="media-icons">
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Copyright © 2020 <a href="#">Rent & Relax </a> All rights reserved</p>
+        </div>
+  </footer>
+
+  <script src="./js/dashboard.js"></script>
+</body>
+
+</html>

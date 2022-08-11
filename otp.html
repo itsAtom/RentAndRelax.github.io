@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rent&relax/recover.ca</title>
+        <link href="image/website_logo.jpg" rel="shortcut icon" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/otp.css" /> 
+        <link rel="stylesheet" href="./css/main_stylesheet.css" />
+       <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>   -->
+    </head>
+    <body> 
+    <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./img/logo5.jpg" alt="logo" class="logoimg">
+            <a href="#">Rent & Relax</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li>
+              <a href="view_property.html" class="desktop-item">Houses</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Houses</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="img/back6.jpg" alt="">
+                  </div>
+                  <div class="row">
+                    <h3>House Type</h3>
+                    <ul class="mega-links">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Apartment</a></li>
+                      <li><a href="#">Cottage</a></li>
+                      <li><a href="#">Basement</a></li>
+                      <li><a href="#">Office</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <h3>Location</h3>
+                    <ul class="mega-links">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Downtown</a></li>
+                      <li><a href="#">North york</a></li>
+                      <li><a href="#">Etobicoke</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <h3>Range</h3>
+                    <ul class="mega-links">
+                      <li><a href="#">Less than 1000$</a></li>
+                      <li><a href="#">1000$ -2000$</a></li>
+                      <li><a href="#">2000$ - 3000$</a></li>
+                      <li><a href="#">More than 3000$</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="About_us.html">About Us</a></li>
+            <li><a href="feedback.html">Contact</a></li>
+            <li>
+              <a href="#" class="desktop-item">Profile <i class="fa fa-user" id="userlogo"></i></a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Profile</label>
+              <ul class="drop-menu">
+                <li><a href="#">Your Requests</a></li>
+                <li><a href="OwnerResponse.html">Owner's responses</a></li>
+                <li><a href="FindProperty.html">Request for property</a></li>
+                <li><a href="forget.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+              </ul>
+            </li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+        </nav>
+
+
+        <div class="login-box" id="login-box">
+                
+            <h2>Trouble Logging In?</h2>
+            <h4>Please check your mail box and enter OTP below to access your account.</h4>
+            <br><br><form id="form" method="post" >
+                <div class="user-box">
+                    <input type="text" name="otp" id="otp" required>
+                    <label for="otp">Please enter OTP sent to you</label>
+                </div>
+                <div><input type="submit" value="Submit OTP" id="button"></div>
+                </form>
+
+                </div>
+
+                <div class="login-box2" id="login-box2">
+                    <h2>Set Your New Password:</h2>
+                    <h4>Please enter your new password.</h4>
+                    <br><br><form id="form2">
+                <div class="user-box">
+                    <input type="text" name="pass1" id="pass1" required>
+                    <label for="otp">Please enter your password</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="pass2" id="pass2" required>
+                    <label for="otp">Re-enter your password</label>
+                </div>
+                <span id="error"></span>
+                <div><input type="button" value="Password Reset" id="done" onclick="pass()"></div>
+                </form>
+
+                </div>
+                  <!--footer -->
+           <footer class="login-box3">
+            <div class="bottom">
+                <p>Copyright &copy; 2022 <a href="index.html">Rent & Relax </a> All rights reserved</p>
+            </div>
+        </footer>
+            <script src="js/otp.js"></script>
+        </body>
+        </html>

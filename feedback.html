@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us Page </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All propety are available here based on different areas , home type.. all information available of house like price, location, details.. " />
+    <meta name="keywords" content="property, toronto, appartment, house, rent, home, canada, downtown, low price house, one bedroom house, renting home" />
+    <link rel="stylesheet" href="./css/main_stylesheet.css" />
+    <link rel="stylesheet" href="./css/feedback.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+  <!--main nav bar-->
+    
+  <nav>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="./img/logo5.jpg" alt="logo" class="logoimg">
+        <a href="homepage_buyer.html">Rent & Relax</a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li>
+          <a href="view_property.html" class="desktop-item">Houses</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Houses</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row"> <img src="img/back6.jpg" alt=""> </div>
+              <div class="row">
+                <h3>House Type</h3>
+                <ul class="mega-links">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Apartment</a></li>
+                  <li><a href="#">Cottage</a></li>
+                  <li><a href="#">Basement</a></li>
+                  <li><a href="#">Office</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <h3>Location</h3>
+                <ul class="mega-links">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Downtown</a></li>
+                  <li><a href="#">North york</a></li>
+                  <li><a href="#">Etobicoke</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <h3>Range</h3>
+                <ul class="mega-links">
+                  <li><a href="#">Less than 1000$</a></li>
+                  <li><a href="#">1000$ -2000$</a></li>
+                  <li><a href="#">2000$ - 3000$</a></li>
+                  <li><a href="#">More than 3000$</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="About_us.html">About Us</a></li>
+        <li><a href="feedback.html">Contact</a></li>
+        <li>
+          <a href="#" class="desktop-item">Profile <i class="fa fa-user" id="userlogo"></i></a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Profile</label>
+          <ul class="drop-menu">
+            <li><a href="OwnerResponse.html">Owner's responses</a></li>
+            <li><a href="FindProperty.html">Request for property</a></li>
+            <li><a href="forget.html">Forgot password</a></li>
+            <li><a href="login.html">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+      <!-- sucess message after submit button-->
+      <div id="successmsg" >
+        <i class="fa fa-check"></i>
+        Your Feedback sent sucessfully! Thank you.
+      </div>
+      <!-- contact form -->
+      <section id="contact">
+         <!--map------------------->
+         <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184403.8169888066!2d-79.62761535000001!3d43.766430899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3b2126b79ccf%3A0xc59d553df8c129ea!2sHumber%20River!5e0!3m2!1sen!2sca!4v1656345203290!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"	
+        </div>
+        <!--contact-box------------->
+          <div class="contact-box">
+            <!--heading---------->
+            <div class="c-heading">
+              <h1>Contact Us</h1>
+              <p>Contact Us Regarding Question Or Issues Or give feedback to us</p>
+            </div>
+            <!--inputs------------------>
+            <div class="c-inputs">
+              <form>
+                <input type="text" placeholder="Full Name" id="name" />	<span></span>
+                <input type="email" placeholder="Example@gmail.com" id="email"/> <span></span><br>
+                <textarea name="message" placeholder="Write Message" id="message"></textarea><br><span id="msg"></span><br>
+                <!--sumbit-btn----------->
+                <input type="button" id="btnsubmit" value="SEND"></button>
+                <input type="button" id="btnreset" value="RESET"></button>
+              </form>
+              <div class="social">
+                <!--icons--------->
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div> 
+          </div>
+      </section>
+      <!-- contact details -->
+      <div id="contact-details">
+        <div class="details">
+          <span class="fa fa-map-marker icon" id="addicon" onmouseover="show('addicon')"></span>
+          <div id="showadd">
+            <h2 id="showicon1">Address</h2>
+            <p> 999, Younge Street </p>
+            <p> Downtown, Toronto</p>
+            <p>M8Y 2L5</p>
+          </div>
+        </div>
+        <div class="details">
+          <span class="fa fa-phone icon" id="contacticon" onmouseover="show('contacticon')"></span>
+          <div id="showcontact">
+            <h2>Let's Talk</h2>
+            <p>+1 999 998 8888</p>
+          </div>
+        </div>
+        <div class="details">
+          <span class="fa fa-paper-plane icon" id="emailicon" onmouseover="show('emailicon')" ></span>
+          <div id="showemail">
+            <h2>Email</h2>
+            <p>Rent.relax@gmail.com</p>
+          </div>
+        </div>
+        <div class="details">
+          <span class="fa fa-globe icon" id="webicon" onmouseover="show('webicon')"></span>
+          <div id="showweb">
+            <h2>Website</h2>
+            <p>www.rent&relax.com</p>
+          </div>
+        </div>
+      </div>
+       <!-- website main footer -->
+      <footer class="main_footer">
+        <div class="content">
+          <!--left colum of footer-->
+          <div class="left box">
+            <!-- website name and info-->
+            <div class="upper">
+              <div class="topic">Rent & Relax</div>
+              <p>Find your Dream renting space &</br/> Find suitable renter for your space. <br/> </p>
+            </div>
+            <!-- website contact info-->
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume"></i>+1 999 9999 999</a>
+              </div>
+              <div class="email">
+                <a href="mailto:support@murach.com"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <!-- all main pages link in footer 2nd column-->
+          <div class="middle box">
+            <div class="topic">Pages</div>
+            <div><a href="homepage_buyer.html">Homepage</a></div>
+            <div><a href="view_property.html">All Houses</a></div>
+            <div><a href="About_us.html">About us</a></div>
+            <div><a href="feedback.html">Contact us</a></div>
+            <div><a href="OwnerResponse.html">Owner's messages</a></div>
+          </div>
+          <!-- right side of footer-->
+          <div class="right box">
+            <!-- form with message us title-->
+            <div class="topic">Message us</div>
+            <form action="#">
+              <input type="text" placeholder="Enter Your Message"><span>
+              <input type="submit" name="" value="Send">
+              <!--social media icons with links-->
+              <div class="media-icons">
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+          <!-- footer bottom one line with rights-->
+          <div class="bottom">
+            <p>Copyright &copy; 2022 <a href="#">Rent & Relax </a> All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+      <script src="js/feedback.js"></script>
+  </body>
+</html>

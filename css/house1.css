@@ -1,0 +1,187 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body
+{
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Content */
+
+/*Content padded*/
+
+.house-details
+{
+  padding: 0 12%;
+}
+
+.house-details .house-title
+{
+  margin-top: 50px;
+}
+
+/*Detached House*/
+
+.house-details .house-title h1
+{
+  font-weight: 600;
+}
+
+/*Pictures*/
+
+.house-details .gallery
+{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 'first first . .' 'first first . .';
+}
+
+/*Pictures*/
+
+.house-details .gallery div img
+{
+  width: 100%;
+  display: block;
+  border-radius: 10px;;
+}
+
+.house-details .small-details h2
+{
+  font-weight: 500;
+}
+
+.house-details .small-details h4
+{
+  text-align: right;
+  font-size: 22px;
+}
+
+.house-details .line
+{
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0 50px;  
+}
+
+.house-details .detail-list
+{
+  list-style: none;
+  margin: 50px 0;
+}
+
+.house-details .details-list li
+{
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgb(83, 5, 5);
+  font-weight: bolder;
+}
+
+.house-details .details-list li span
+{
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+p
+{
+  font-weight: bolder;;
+}
+
+/*Background color*/
+
+@keyframes change 
+{
+  0%
+  {
+    background-position: 0 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+}
+
+/*Slides*/
+
+.mySlides {display: none}
+img {vertical-align: middle;} 
+  
+/*Slideshow container*/
+
+.house-details .slideshow-container {
+  padding-top: 50px;
+  max-width: 1000px;
+  position: inline;
+  margin: auto;
+}
+
+/*Next & previous buttons*/
+
+.house-details .prev, .next {
+  cursor: pointer;
+  position: inline;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*Position the "next button" to the right*/
+
+.house-details .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background color with a little bit see-through*/
+
+.house-details .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Fading animation*/
+
+.house-details .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Extra Media Queries*/
+
+@media screen and (max-width: 970px)
+{
+  .nav-links .desktop-items{
+    display:flex;
+  }
+}

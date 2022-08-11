@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Find Property Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main_stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/PStyle.css">
+    <script src="./js/Findproperty.js"></script>
+</head>
+
+<body>
+    <!-- website main header -->
+    
+    <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./img/logo5.jpg" alt="logo" class="logoimg">
+            <a href="homepage_buyer.html">Rent & Relax</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li>
+              <a href="view_property.html" class="desktop-item">Houses</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Houses</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row"> <img src="img/back6.jpg" alt=""> </div>
+                  <div class="row">
+                    <h3>House Type</h3>
+                    <ul class="mega-links">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Apartment</a></li>
+                      <li><a href="#">Cottage</a></li>
+                      <li><a href="#">Basement</a></li>
+                      <li><a href="#">Office</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <h3>Location</h3>
+                    <ul class="mega-links">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Downtown</a></li>
+                      <li><a href="#">North york</a></li>
+                      <li><a href="#">Etobicoke</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <h3>Range</h3>
+                    <ul class="mega-links">
+                      <li><a href="#">Less than 1000$</a></li>
+                      <li><a href="#">1000$ -2000$</a></li>
+                      <li><a href="#">2000$ - 3000$</a></li>
+                      <li><a href="#">More than 3000$</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="About_us.html">About Us</a></li>
+            <li><a href="feedback.html">Contact</a></li>
+            <li>
+              <a href="#" class="desktop-item">Profile <i class="fa fa-user" id="userlogo"></i></a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Profile</label>
+              <ul class="drop-menu">
+                <li><a href="OwnerResponse.html">Owner's responses</a></li>
+                <li><a href="FindProperty.html">Request for property</a></li>
+                <li><a href="forget.html">Forgot password</a></li>
+                <li><a href="login.html">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+
+    <!--Body Registration Form-->
+    <div class="main-body-container">
+        <div class="container">
+            <div class="title">Looking For Property Fill here</div>
+            <div class="content">
+                <form action="#">
+                    <div class="user-details">
+                       
+                        <div class="input-box">
+                            <span class="details font">What is Your budget?</span>
+                            <input type="text" placeholder="$" id="budget">
+                            <span>*required</span>
+                        </div>
+                        <div class="input-box">
+                            <span class="details font">Have you visited the state previously?</span>
+                            <input type="text" placeholder="" id="visited">
+                            <span>*required</span>
+                        </div>
+                        <div class="input-box">
+                            <span class="details font">When are you planning on visiting?</span>
+                            <input type="date" placeholder="">
+                        </div>
+                        <div class="input-box">
+                            <span class="details font">Can we help you make travel arrangement?</span>
+                            <div class="gender-details">
+                                <input type="radio" name="gender" id="dot-1">
+                                <input type="radio" name="gender" id="dot-2">
+                                <div class="category">
+                                    <label for="dot-1">
+                                        <span class="dot one"></span>
+                                        <span class="gender">Yes</span>
+                                    </label>
+                                    <label for="dot-2">
+                                        <span class="dot two"></span>
+                                        <span class="gender">No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <span class="details font">What kind of property are you intrested in?</span>
+                            <div class="prop-type-details">
+                                <div class="category">
+                                    <label for="">
+                                        <span><input type="checkbox"></span>
+                                        <span>Raw Land</span>
+                                    </label>
+                                    <label for="">
+                                        <span><input type="checkbox"></span>
+                                        <span>Land under Construction</span>
+                                    </label>
+                                    <label for="">
+                                        <span><input type="checkbox"></span>
+                                        <span>Other</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <span class="details font">What kind of location are you intrested in?</span>
+                            <input type="text" placeholder="" id="length">
+                            <span>*required</span>
+                        </div>
+                        <div class="input-box">
+                            <span class="details font">Number Of Family Members?</span>
+                            <input type="text" placeholder="" id="dd">
+                            <span>*required</span>
+                        </div>
+                        <div class="input-box">
+                            <span class="details  font">How long are you planning to stay?</span>
+                            <input type="text" placeholder="" id="bothd&a">
+                            <span>*required</span>
+                        </div>   
+                    </div>
+
+
+                    <div class="button">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Close Body Registration Form-->
+    <!-- website main footer -->
+    <footer class="main_footer">
+        <div class="content">
+            <!--left colum of footer-->
+            <div class="left box">
+                <!-- website name and info-->
+                <div class="upper">
+                    <div class="topic">Rent & Relax</div>
+                    <p>Find your Dream renting space &</br /> Find suitable renter for your space. <br /> </p>
+                </div>
+                <!-- website contact info-->
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+1 999 9999 999</a>
+                    </div>
+                    <div class="email">
+                        <a href="mailto:support@murach.com"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <!-- all main pages link in footer 2nd column-->
+            <div class="middle box">
+                <div class="topic">Pages</div>
+                <div><a href="homepage_buyer.html">Homepage</a></div>
+                <div><a href="view_property.html">All Houses</a></div>
+                <div><a href="About_us.html">About us</a></div>
+                <div><a href="feedback.html">Contact us</a></div>
+                <div><a href="OwnerResponse.html">Owner's messages</a></div>
+              </div>
+            <!-- right side of footer-->
+            <div class="right box">
+                <!-- form with message us title-->
+                <div class="topic">Message us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Message">
+                    <input type="submit" name="" value="Send">
+                    <!--social media icons with links-->
+                    <div class="media-icons">
+                        <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- footer bottom one line with rights-->
+            <div class="bottom">
+                <p>Copyright &copy; 2022 <a href="#">Rent & Relax </a> All rights reserved</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

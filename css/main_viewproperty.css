@@ -1,0 +1,194 @@
+html{
+   overflow-x: hidden;
+    width:100%;
+}
+.container{
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    overflow: hidden;
+    width: 80%;
+    height: 10%;
+    margin-left:50px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  .container:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+header{
+    background-image: url("../img/back5.jpg");
+    height:400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    width:100%;
+}
+header h1{
+    color:white;
+    padding: 90px 0 0 80px;
+}
+header form{
+    padding-left: 80px;
+}
+header input {
+    
+    height: 35px;
+  }
+header button,main button{
+    background: linear-gradient(to right, #f5650b, #46251a);
+    color:white;
+    height: 50px;
+    width: 100px;
+}
+header button:hover, main button:hover{
+    background: linear-gradient(to right, #67b26b, #4ca2cb);
+    color: black;
+}
+main div img{
+    height:300px;
+    width: 390px;
+    margin:50px 20px 0px 50px;
+}
+main h2{
+    margin: 30px 0px 0px 60px;
+}
+main img:hover {
+    border: 3px solid black;
+}
+main button{
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.sarea, .stype , .sprice{
+    width: 300px;
+    height: 50px;
+    margin: 30px 20px 0px 70px;
+    font-size: 16px;
+    padding: 2px;
+    border-radius: 5%;
+}
+.homes {
+    display: flex; 
+    flex-wrap: wrap;
+  }
+.home-info h2{
+    margin-top: auto;
+    margin:10px 0px 10px 50px;
+  }
+.home-info h3{
+    margin:10px 0px 20px 50px;
+    color:rgb(60, 59, 59);
+    
+}
+.home-info button{
+    border-radius: 4px;
+    background: linear-gradient(to right, #67b26b, #4ca2cb);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+    width: 130px;
+    height: 40px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+    float: right;
+    margin-right:60px;
+}
+.home-info button:hover{
+    background: linear-gradient(to right, #e7590c, #dca593) ;
+    color:black;
+}
+
+
+/*for laptop / desktop screen */
+@media only screen   
+and (min-device-width : 1000px)   
+and (max-device-width : 2000px) 
+{
+    header{
+         height:400px;
+    }
+    header h1{
+        padding: 90px 0 0 80px;
+    }
+    header form{
+        padding-left: 80px;
+    }
+    header input {
+        width: 220px;
+        height: 35px;
+      }
+    header button,main button{
+        height: 50px;
+        width: 100px;
+    }
+    main div img{
+        height:300px;
+        width: 390px;
+        margin:50px 50px 0px 50px;
+    }
+    main h2{
+        margin: 30px 0px 0px 60px;
+    }
+    main img:hover {
+        border: 3px solid black;
+    }
+    main button{
+        border-radius: 5px;
+        font-size: 16px;
+        margin-left: 50px;
+    }
+    .sarea, .stype , .sprice{
+        width: 300px;
+        height: 50px;
+        margin: 30px 20px 0px 70px;
+        font-size: 16px;
+        padding: 2px;
+        border-radius: 5%;
+    }
+    .home-info h2{
+        margin-top: auto;
+        margin:10px 0px 10px 50px;
+      }
+    .home-info h3{
+        margin:10px 0px 20px 50px;
+     }
+    .home-info button{
+        border-radius: 4px;
+        font-size: 20px;
+        padding: 2px;
+        width: 130px;
+        height: 40px;
+        margin: 5px;
+        margin-right:60px;
+    }
+}
